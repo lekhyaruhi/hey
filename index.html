@@ -6,6 +6,7 @@
     <title> WEB TO LEAD FORM </title>
     <link rel="stylesheet"  href="style.css"/>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <h1> CREATE  LEAD </h1>
@@ -15,6 +16,7 @@
     <input type=hidden name="oid" value="00DdM000002jaZr"/>
     <input type=hidden name="retURL" value="https://lekhyaruhi.github.io/hey/thanks.html"/>
     <input type=hidden name="LeadDate__c" class="outputdate"/>
+    <input type=hidden name='captcha_settings' value='{"keyname":"hey","fallback":"true","orgId":"00DdM000002jaZr","ts":""}'>
     
     <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true" /><br>
     
@@ -23,7 +25,7 @@
     <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text"  required="true"/><br>
     <label for="email">Lead Date</label>  
     <input type ="date" required="true" class="inputdate"/>
-    
+    <div class="g-recaptcha" data-sitekey="6Le-vUoqAAAAADTfK7KUEMskavygtBwGae0X1EuW"></div><br>
    
     <input type="submit" name="submit"class="submit"/>
     
